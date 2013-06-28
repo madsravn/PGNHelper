@@ -1,0 +1,36 @@
+MAKE		= make
+AR		= @ar
+CC              = @g++
+MV		= @mv
+RM		= @rm -rf
+MKDIR		= @mkdir
+MKDEP		= @mkdep
+ECHO		= @echo
+LDFLAGS		= -O3 
+CFLAGS          = -O3 -std=gnu++11
+
+.SUFFIXES: .cpp .h .d .o
+
+.cpp.o:
+	$(ECHO) "Compiling $<"
+	$(CC) $(CFLAGS) -c -o $@ $<
+.d.o:
+	$(ECHO) "Finding dependancies for $<"
+	$(CC) $(CFLAGS) -MD -E $<
+
+SOURCES = $(wildcard *.cpp)
+OBJS = $(patsubst %.cpp, %.o, $(SOURCES))
+DEPS = $(patsubst %.cpp, %.d, $(SOURCES))
+
+clean:
+	$(RM) core .deps *.o $(NAME)
+	$(RM) lexer.cpp parse.cpp parse.cpp.h
+	$(ECHO) "All clean!"
+
+deps:
+	$(ECHO) "Finding dependancies in `pwd`..."
+	$(RM) .deps
+	$(CC) $(CFLAGS) -MD -E $(SOURCES) > /dev/null
+	$(MKDIR) .deps
+	$(MV) $(DEPS) .deps
+

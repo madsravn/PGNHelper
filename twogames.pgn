@@ -1,0 +1,32 @@
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2013.06.23"]
+[White "benjaminduffy"]
+[Black "madsravn"]
+[Result "0-1"]
+[WhiteElo "1092"]
+[BlackElo "1020"]
+[TimeControl "15|10"]
+[Termination "madsravn won by checkmate"]
+
+1.Nf3 d5 2.d4 Nc6 3.e3 e5 4.c3 e4 5.Nfd2 Nf6 6.Be2 Be6 7.O-O Qd6 8.Na3 O-O-O 9.Nb5 Qd7 10.Qa4 a6
+ 11.Na3 Bxa3 12.Qxa3 h6 13.Bxa6 bxa6 14.Qxa6+ Kb8 15.b3 Qd6 16.c4 Ng4 17.g3 Nb4 18.Qb5+ Kc8 19.c5 c6 20.Qb6 Qb8
+ 21.Ba3 Qxb6 22.cxb6 Nc2 23.Be7 Rde8 24.Rac1 Rxe7 25.Rxc2 Kb7 26.Rfc1 Bd7 27.a4 Kxb6 28.b4 Ra8 29.a5+ Kb5 30.Rc5+ Kxb4
+ 31.Nb1 Rxa5 32.R5c2 c5 33.Rb2+ Ka4 34.dxc5 Rb5 35.Ra2+ Kb3 36.Ra3+ Kb2 37.Rd1 Rxc5 38.Ra6 Kc2 39.Re1 Bc8 40.Ra2+ Kb3
+ 41.Rd2 Rc2 42.Rxd5 Nxf2 43.Rb5+ Ka4 44.Rb8 Nh3+ 45.Kf1 Rf2# 0-1
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2013.06.23"]
+[White "benjaminduffy"]
+[Black "madsravn"]
+[Result "0-1"]
+[WhiteElo "1092"]
+[BlackElo "1020"]
+[TimeControl "15|10"]
+[Termination "madsravn won by checkmate"]
+
+1.Nf3 d5 2.d4 Nc6 3.e3 e5 4.c3 e4 5.Nfd2 Nf6 6.Be2 Be6 7.O-O Qd6 8.Na3 O-O-O 9.Nb5 Qd7 10.Qa4 a6
+ 11.Na3 Bxa3 12.Qxa3 h6 13.Bxa6 bxa6 14.Qxa6+ Kb8 15.b3 Qd6 16.c4 Ng4 17.g3 Nb4 18.Qb5+ Kc8 19.c5 c6 20.Qb6 Qb8
+ 21.Ba3 Qxb6 22.cxb6 Nc2 23.Be7 Rde8 24.Rac1 Rxe7 25.Rxc2 Kb7 26.Rfc1 Bd7 27.a4 Kxb6 28.b4 Ra8 29.a5+ Kb5 30.Rc5+ Kxb4
+ 31.Nb1 Rxa5 32.R5c2 c5 33.Rb2+ Ka4 34.dxc5 Rb5 35.Ra2+ Kb3 36.Ra3+ Kb2 37.Rd1 Rxc5 38.Ra6 Kc2 39.Re1 Bc8 40.Ra2+ Kb3
+ 41.Rd2 Rc2 42.Rxd5 Nxf2 43.Rb5+ Ka4 44.Rb8 Nh3+ 45.Kf1 Rf2# 0-1
