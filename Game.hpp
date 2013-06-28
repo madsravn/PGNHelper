@@ -12,6 +12,7 @@ public:
 private:
     std::vector<std::string> list;
     std::vector<std::string> enums;
+    std::vector<std::string> moves;
 
 
 };
