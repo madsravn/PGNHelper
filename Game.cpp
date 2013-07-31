@@ -6,6 +6,24 @@ Game::Game() {
     list = {"","","","","","","","","",""};
 };
 
+std::string
+Game::getWinner() {
+    int resultIndex = std::find(enums.begin(),enums.end(), "Result") - enums.begin();
+    std::string result = list.at(resultIndex);
+    if(result == "0-1") {
+        int blackResult = std::find(enums.begin(),enums.end(), "Black") - enums.begin(); 
+        return list.at(blackResult);
+    }
+    if(result == "1-0") {
+        int whiteResult = std::find(enums.begin(),enums.end(), "White") - enums.begin();
+        return list.at(whiteResult);
+    }
+    // Either there's an error or the game was draw
+    return "";
+
+}
+
+
 //TODO: Make decent. Currently doesn't work with commented PGN files (maybe more)
 void
 Game::parse(std::string line) {
@@ -16,9 +34,9 @@ Game::parse(std::string line) {
         str >> a;
         std::string event;
         str >> event;
-        std::cout << event << std::endl;
+        //std::cout << event << std::endl;
         int index = std::find(enums.begin(),enums.end(), event) - enums.begin();
-        std::cout << index << std::endl;
+        //std::cout << index << std::endl;
         if(index < enums.size()) {
             str >> std::ws;
             str >> a;
@@ -27,6 +45,8 @@ Game::parse(std::string line) {
             std::getline(str,name);
             std::string::size_type end = name.find_first_of("\"");
             name = name.substr(0,end);
+            //std::cout << name << std::endl << std::endl;
+            list.at(index) = name;
         }
     } else {
 

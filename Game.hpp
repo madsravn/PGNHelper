@@ -9,6 +9,7 @@ class Game {
 public:
     Game();
     void parse(std::string line);
+    std::string getWinner();
 private:
     std::vector<std::string> list;
     std::vector<std::string> enums;
