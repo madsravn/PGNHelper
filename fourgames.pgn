@@ -1,0 +1,63 @@
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2013.06.07"]
+[White "madsravn"]
+[Black "04vstrom"]
+[Result "1-0"]
+[WhiteElo "998"]
+[BlackElo "1045"]
+[TimeControl "15|10"]
+[Termination "madsravn won by checkmate"]
+
+1.e4 e6 2.Nf3 h6 3.d4 a6 4.Bc4 c6 5.O-O g5 6.e5 Be7 7.c3 g4 8.Ne1 h5 9.Bf4 f6 10.exf6 Nxf6
+ 11.Be5 Rg8 12.Bxf6 Bxf6 13.Nd3 Qc7 14.g3 d5 15.Bb3 Nd7 16.Nf4 Nf8 17.Nxh5 Bh8 18.Re1 Qh7 19.Nf4 Bd7 20.c4 O-O-O
+ 21.cxd5 cxd5 22.Qc1+ Kb8 23.Bc2 Qf7 24.Nd2 Bxd4 25.Nb3 Bb6 26.a4 Bc6 27.a5 Bc7 28.Nc5 Nd7 29.Ncxe6 Bxf4 30.gxf4 Qh5
+ 31.Nxd8 Rxd8 32.Ba4 Bxa4 33.Rxa4 Rh8 34.Kf1 Qxh2 35.Ke2 Re8+ 36.Kd1 Rxe1+ 37.Kxe1 Qg1+ 38.Kd2 Qxf2+ 39.Kd1 Qf1+ 40.Kc2 Qb5
+ 41.Ra3 Nc5 42.f5 Qd7 43.Qf4+ Ka7 44.Qxg4 Qb5 45.Qd4 Qe2+ 46.Kb1 Qe1+ 47.Ka2 b6 48.Qg7+ Nb7 49.axb6+ Kxb6 50.Rb3+ Kc5
+ 51.Qxb7 Qa5+ 52.Kb1 Qe1+ 53.Ka2 Qa5+ 54.Kb1 Qe1+ 55.Kc2 Qe4+ 56.Kc1 Qxf5 57.Qb6+ Kc4 58.Qb4# 1-0
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2013.07.29"]
+[White "madsravn"]
+[Black "JBCn1"]
+[Result "1-0"]
+[WhiteElo "1076"]
+[BlackElo "992"]
+[TimeControl "15|10"]
+[Termination "madsravn won by checkmate"]
+
+1.e4 e5 2.Nf3 Nc6 3.d4 b6 4.Bc4 Nxd4 5.Nxd4 exd4 6.O-O c5 7.Bd5 Rb8 8.Bf4 d6 9.c3 h6 10.Qa4+ Bd7
+ 11.Qxa7 g5 12.Bg3 b5 13.cxd4 Nf6 14.dxc5 Nxd5 15.exd5 Bf5 16.cxd6 Bxd6 17.Bxd6 Qxd6 18.Re1+ Kf8 19.Nc3 Rc8 20.Nxb5 Qxd5
+ 21.Qe7+ Kg7 22.Nd6 Rcf8 23.Rad1 Qxa2 24.Nxf5+ Kg6 25.Rd6+ Kh5 26.Ng3+ Kg4 27.Qe4# 1-0
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2013.06.23"]
+[White "benjaminduffy"]
+[Black "madsravn"]
+[Result "0-1"]
+[WhiteElo "1092"]
+[BlackElo "1020"]
+[TimeControl "15|10"]
+[Termination "madsravn won by checkmate"]
+
+1.Nf3 d5 2.d4 Nc6 3.e3 e5 4.c3 e4 5.Nfd2 Nf6 6.Be2 Be6 7.O-O Qd6 8.Na3 O-O-O 9.Nb5 Qd7 10.Qa4 a6
+ 11.Na3 Bxa3 12.Qxa3 h6 13.Bxa6 bxa6 14.Qxa6+ Kb8 15.b3 Qd6 16.c4 Ng4 17.g3 Nb4 18.Qb5+ Kc8 19.c5 c6 20.Qb6 Qb8
+ 21.Ba3 Qxb6 22.cxb6 Nc2 23.Be7 Rde8 24.Rac1 Rxe7 25.Rxc2 Kb7 26.Rfc1 Bd7 27.a4 Kxb6 28.b4 Ra8 29.a5+ Kb5 30.Rc5+ Kxb4
+ 31.Nb1 Rxa5 32.R5c2 c5 33.Rb2+ Ka4 34.dxc5 Rb5 35.Ra2+ Kb3 36.Ra3+ Kb2 37.Rd1 Rxc5 38.Ra6 Kc2 39.Re1 Bc8 40.Ra2+ Kb3
+ 41.Rd2 Rc2 42.Rxd5 Nxf2 43.Rb5+ Ka4 44.Rb8 Nh3+ 45.Kf1 Rf2# 0-1
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2013.06.23"]
+[White "benjaminduffy"]
+[Black "madsravn"]
+[Result "0-1"]
+[WhiteElo "1092"]
+[BlackElo "1020"]
+[TimeControl "15|10"]
+[Termination "madsravn won by checkmate"]
+
+1.Nf3 d5 2.d4 Nc6 3.e3 e5 4.c3 e4 5.Nfd2 Nf6 6.Be2 Be6 7.O-O Qd6 8.Na3 O-O-O 9.Nb5 Qd7 10.Qa4 a6
+ 11.Na3 Bxa3 12.Qxa3 h6 13.Bxa6 bxa6 14.Qxa6+ Kb8 15.b3 Qd6 16.c4 Ng4 17.g3 Nb4 18.Qb5+ Kc8 19.c5 c6 20.Qb6 Qb8
+ 21.Ba3 Qxb6 22.cxb6 Nc2 23.Be7 Rde8 24.Rac1 Rxe7 25.Rxc2 Kb7 26.Rfc1 Bd7 27.a4 Kxb6 28.b4 Ra8 29.a5+ Kb5 30.Rc5+ Kxb4
+ 31.Nb1 Rxa5 32.R5c2 c5 33.Rb2+ Ka4 34.dxc5 Rb5 35.Ra2+ Kb3 36.Ra3+ Kb2 37.Rd1 Rxc5 38.Ra6 Kc2 39.Re1 Bc8 40.Ra2+ Kb3
+ 41.Rd2 Rc2 42.Rxd5 Nxf2 43.Rb5+ Ka4 44.Rb8 Nh3+ 45.Kf1 Rf2# 0-1

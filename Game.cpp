@@ -7,6 +7,46 @@ Game::Game() {
 };
 
 std::string
+Game::getType() {
+    return list.at(8);
+}
+
+std::string
+Game::getResult() {
+    return list.at(5);
+}
+
+std::string
+Game::getBlack() {
+    return list.at(4);
+}
+
+std::string
+Game::getWhite() {
+    return list.at(3);
+}
+
+bool
+Game::getDraw() {
+    if(list.at(5) == "½-½") {
+        return true;
+    }
+    return false;
+}
+
+
+std::string
+Game::getMonth() {
+    std::string date = list.at(2);
+    if(date == "") {
+        return "";
+    }
+    std::string month = date.substr(0,date.find_last_of("."));
+    return month;
+}
+
+
+std::string
 Game::getWinner() {
     int resultIndex = std::find(enums.begin(),enums.end(), "Result") - enums.begin();
     std::string result = list.at(resultIndex);
@@ -23,6 +63,22 @@ Game::getWinner() {
 
 }
 
+std::string
+Game::getLoser() {
+    int resultIndex = std::find(enums.begin(), enums.end(), "Result") - enums.begin();
+    std::string result = list.at(resultIndex);
+    if(result == "0-1") {
+        int whiteResult = std::find(enums.begin(), enums.end(), "White") - enums.begin();
+        return list.at(whiteResult);
+    }
+    if(result == "1-0") {
+        int blackResult = std::find(enums.begin(), enums.end(), "Black") - enums.begin();
+        return list.at(blackResult);
+    }
+    // Either there's an error or the game was draw
+
+    return "";
+}
 
 //TODO: Make decent. Currently doesn't work with commented PGN files (maybe more)
 void

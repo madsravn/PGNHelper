@@ -10,6 +10,13 @@ public:
     Game();
     void parse(std::string line);
     std::string getWinner();
+    std::string getLoser();
+    std::string getMonth();
+    bool getDraw();
+    std::string getType();
+    std::string getResult();
+    std::string getWhite();
+    std::string getBlack();
 private:
     std::vector<std::string> list;
     std::vector<std::string> enums;
