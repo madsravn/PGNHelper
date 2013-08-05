@@ -1,6 +1,6 @@
 #include "Games.hpp"
 #include "Parser.hpp"
-
+#include <algorithm>
 Games::Games() {
 
 }
@@ -53,6 +53,7 @@ Games::getMonths() {
             months.push_back(month);
         }
     }
+    std::sort(months.begin(), months.end());
     return months;
 }
 
@@ -66,6 +67,29 @@ Games::getGamesByMonth(std::string month) {
     }
     Games rgames(games);
     return rgames;
+}
+
+void
+Games::addGame(Game game) {
+    pgames.push_back(game);
+}
+
+std::map<std::string, Games>
+Games::getGamesByMonth() {
+    std::map<std::string, Games> games;
+    for(auto &game : pgames) {
+        auto it = games.find(game.getMonth());
+        if(it != games.end()) {
+            games.at(game.getMonth()).addGame(game);
+        } else {
+            Games gamestemp;
+            gamestemp.addGame(game);
+            std::string month = game.getMonth();
+            games.insert(std::make_pair(month, gamestemp));
+            //games[month] = gamestemp;
+        }
+    }
+    return games;
 }
 
 Games
