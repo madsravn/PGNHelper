@@ -17,6 +17,7 @@ public:
     std::string getResult();
     std::string getWhite();
     std::string getBlack();
+    int indexOf(std::string str);
 private:
     std::vector<std::string> list;
     std::vector<std::string> enums;

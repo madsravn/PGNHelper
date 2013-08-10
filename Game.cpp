@@ -6,29 +6,49 @@ Game::Game() {
     list = {"","","","","","","","","",""};
 };
 
+
+int
+Game::indexOf(std::string str) {
+    int resultIndex = std::find(enums.begin(),enums.end(), str) - enums.begin();
+    if(resultIndex < enums.size()) {
+        return resultIndex;
+    }
+    return -1;
+}
+
+
 std::string
 Game::getType() {
-    return list.at(8);
+    int index = indexOf("TimeControl");
+    if(index < 0) {
+        std::cout << "ERROR" << std::endl;
+        return "";
+    }
+    return list.at(index);
 }
 
 std::string
 Game::getResult() {
-    return list.at(5);
+    int index = indexOf("Result");
+    return list.at(index);
 }
 
 std::string
 Game::getBlack() {
-    return list.at(4);
+    int index = indexOf("Black");
+    return list.at(index);
 }
 
 std::string
 Game::getWhite() {
-    return list.at(3);
+    int index = indexOf("White");
+    return list.at(index);
 }
 
 bool
 Game::getDraw() {
-    if(list.at(5) == "½-½") {
+    int index = indexOf("Result");
+    if(list.at(index) == "½-½") {
         return true;
     }
     return false;

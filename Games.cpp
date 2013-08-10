@@ -10,19 +10,14 @@ Games::Games(std::vector<Game> games) {
 }
 
 void
-Games::openFile(std::string tfile) {
+Games::openFile(const std::string& tfile) {
     Parser parser;
     parser.parse(tfile);
     pgames = parser.games();
 }
 
-size_t
-Games::getSize() {
-    return pgames.size();
-}
-
 Games
-Games::getGamesWonBy(std::string winner) {
+Games::getGamesWonBy(const std::string& winner) {
     std::vector<Game> games;
     for(Game &game : pgames) {
         if(game.getWinner().find(winner) == 0) {
@@ -33,7 +28,7 @@ Games::getGamesWonBy(std::string winner) {
 }
 
 Games
-Games::getGamesLostBy(std::string loser) {
+Games::getGamesLostBy(const std::string& loser) {
     std::vector<Game> games;
     for(auto &game : pgames) {
         if(game.getLoser().find(loser) == 0) {
@@ -58,7 +53,7 @@ Games::getMonths() {
 }
 
 Games
-Games::getGamesByMonth(std::string month) {
+Games::getGamesByMonth(const std::string& month) {
     std::vector<Game> games;
     for(auto &game : pgames) {
         if(game.getMonth() == month) {
@@ -105,7 +100,7 @@ Games::getDrawGames() {
 }
 
 Games
-Games::getGamesByType(std::string type) {
+Games::getGamesByType(const std::string& type) {
     std::vector<Game> games;
     for(auto &game : pgames) {
         if(game.getType() == type) {
@@ -151,7 +146,7 @@ Games::lostAsWhite() {
 }
 
 Games
-Games::drawAsWhite(std::string name) {
+Games::drawAsWhite(const std::string& name) {
     std::vector<Game> games;
     for(auto &game : pgames) {
         if(game.getWhite().find(name) == 0  && game.getResult() == "½-½") {
@@ -162,7 +157,7 @@ Games::drawAsWhite(std::string name) {
 }
 
 Games
-Games::drawAsBlack(std::string name) {
+Games::drawAsBlack(const std::string& name) {
     std::vector<Game> games;
     for(auto &game : pgames) {
         if(game.getBlack().find(name) == 0 && game.getResult() == "½-½") {
