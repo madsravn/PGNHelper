@@ -10,7 +10,7 @@ public:
     Game();
     void parse(std::string line);
     std::string getWinner();
-    std::string getLoser();
+    const std::string getLoser() const;
     std::string getMonth();
     bool getDraw();
     std::string getType();

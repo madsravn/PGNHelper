@@ -30,11 +30,14 @@ Games::getGamesWonBy(const std::string& winner) {
 Games
 Games::getGamesLostBy(const std::string& loser) {
     std::vector<Game> games;
-    for(auto &game : pgames) {
+    std::copy_if(pgames.begin(), pgames.end(), 
+            std::back_inserter(games),
+            [loser](Game const &g) { return g.getLoser().find(loser)==0;});
+    /*for(auto &game : pgames) {
         if(game.getLoser().find(loser) == 0) {
             games.push_back(game);
         }
-    }
+    }*/
     return games;
 }
 

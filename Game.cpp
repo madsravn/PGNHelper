@@ -83,8 +83,8 @@ Game::getWinner() {
 
 }
 
-std::string
-Game::getLoser() {
+const std::string
+Game::getLoser() const {
     int resultIndex = std::find(enums.begin(), enums.end(), "Result") - enums.begin();
     std::string result = list.at(resultIndex);
     if(result == "0-1") {
