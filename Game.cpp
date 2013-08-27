@@ -7,6 +7,16 @@ Game::Game() {
 };
 
 
+bool
+Game::find(const std::string& type, const std::string& value) {
+    int index = indexOf(type);
+    if(index != -1) {
+        if(list.at(index) == value) {
+            return true;
+        }
+    }
+    return false;
+}
 int
 Game::indexOf(std::string str) {
     int resultIndex = std::find(enums.begin(),enums.end(), str) - enums.begin();

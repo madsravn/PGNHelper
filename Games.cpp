@@ -17,6 +17,11 @@ Games::openFile(const std::string& tfile) {
 }
 
 Games
+Games::get(const std::string& type, const std::string& value) {
+
+}
+
+Games
 Games::getGamesWonBy(const std::string& winner) {
     std::vector<Game> games;
     for(Game &game : pgames) {
@@ -84,7 +89,6 @@ Games::getGamesByMonth() {
             gamestemp.addGame(game);
             std::string month = game.getMonth();
             games.insert(std::make_pair(month, gamestemp));
-            //games[month] = gamestemp;
         }
     }
     return games;
