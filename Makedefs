@@ -1,13 +1,13 @@
 MAKE		= make
 AR		= @ar
-CC              = @g++
+CC              = @clang++
 MV		= @mv
 RM		= @rm -rf
 MKDIR		= @mkdir
 MKDEP		= @mkdep
 ECHO		= @echo
 LDFLAGS		= -O3 
-CFLAGS          = -O3 -std=gnu++11
+CFLAGS          = -O3 -std=c++11
 
 .SUFFIXES: .cpp .h .d .o
 

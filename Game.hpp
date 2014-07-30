@@ -17,6 +17,7 @@ public:
     std::string getResult();
     std::string getWhite();
     std::string getBlack();
+    bool find(const std::string& type, const std::string& value);
     int indexOf(std::string str);
 private:
     std::vector<std::string> list;

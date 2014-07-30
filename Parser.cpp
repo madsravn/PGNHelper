@@ -15,7 +15,7 @@ Parser::parse(std::string tfile) {
     if(file.is_open()) {
         while(file.good()) {
             std::getline(file,line);
-            //std::cout << line << std::endl;
+            std::cout << line << std::endl;
             if(line.length() > 0) {
                 if(STRtags == false && line.at(0) == '[') {
                     STRtags = true;

@@ -17,6 +17,7 @@ class Games {
         Games getDrawGames();
         Games getGamesByType(const std::string& type);
         Games wonAsBlack();
+        Games get(const std::string& type, const std::string& value);
         Games wonAsWhite();
         Games lostAsWhite();
         Games lostAsBlack();

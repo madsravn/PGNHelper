@@ -18,6 +18,8 @@ Games::openFile(const std::string& tfile) {
 
 Games
 Games::get(const std::string& type, const std::string& value) {
+    std::vector<Game> g;
+    return Games(g);
 
 }
 
